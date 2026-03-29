@@ -20,10 +20,11 @@ jobs:
         distribution: 'temurin'
 
     - name: Setup Flutter
-      uses: subosito/flutter-action@v3
+      uses: subosito/flutter-action@v2
       with:
-        flutter-version: 'latest'
+        flutter-version: '3.19.0'
         channel: 'stable'
+        cache: true
 
     - name: Get Flutter dependencies
       run: flutter pub get
